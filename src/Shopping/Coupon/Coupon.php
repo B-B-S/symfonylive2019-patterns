@@ -3,6 +3,7 @@
 
 namespace Training\Shopping\Coupon;
 
+use Money\Money;
 
 interface Coupon
 {

@@ -4,9 +4,9 @@
 namespace Training\Shopping\Coupon\Constraint;
 
 
+use Money\Money;
 use Training\Shopping\Coupon\Coupon;
 use Training\Shopping\Coupon\IneligibleCouponException;
-use Training\Shopping\Coupon\Money;
 
 class MinimumPurchaseAmountCouponConstraint extends CouponConstraint
 {

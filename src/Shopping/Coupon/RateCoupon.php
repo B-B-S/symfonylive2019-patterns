@@ -4,7 +4,8 @@
 namespace Training\Shopping\Coupon;
 
 
-use Assert\Assert;
+use Assert\Assertion;
+use Money\Money;
 
 class RateCoupon extends AbstractCoupon
 {
@@ -12,7 +13,7 @@ class RateCoupon extends AbstractCoupon
 
     public function __construct(string $code, float $rate)
     {
-        Assert::between($rate, 0, 1);
+        Assertion::between($rate, 0, 1);
 
         parent::__construct($code);
 
